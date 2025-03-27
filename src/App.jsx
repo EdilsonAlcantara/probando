@@ -16,7 +16,7 @@ function App() {
     return (
         <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh', backgroundColor: '' }}>
             <Row className="mb-4 w-100">
-                <Col className="text-center">
+                <Col className="text-center text-white">
                     <h1>Modulos Disponibles</h1>
                 </Col>
             </Row>
