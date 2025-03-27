@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
-import datos from './Datos/datos.json'
+import { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router';
+import datos from './Datos/datos.json';
+
 function App() {
 
     const [aplicaciones, setAplicaciones] = useState([]);
