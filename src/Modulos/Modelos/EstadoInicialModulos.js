@@ -1,3 +1,4 @@
 export const EstadoInicialModulos = {
-    listado: []
+    listado: [],
+    esProduccion: false
 }
