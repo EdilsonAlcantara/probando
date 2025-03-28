@@ -15,8 +15,9 @@
         "link": "https://bellon-consumointerno-frontend-dev-gmc7epc9c9f5b0h6.eastus2-01.azurewebsites.net"
     },
     {
-        "name": "Mant. Usuarios",
+        "name": "Mantenimientos",
         "icon": "MantenimientoUsuario",
-        "link": "https://bellon-liquidacion-frontend-dev-afengya6ahcyhzfr.eastus2-01.azurewebsites.net/"
+        "link": "https://bellon-consumointerno-frontend-dev-gmc7epc9c9f5b0h6.eastus2-01.azurewebsites.net"
     }
+    
 ]
