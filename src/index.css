@@ -1,13 +1,18 @@
 /* Card hover zoom animation */
 body {
-    background: linear-gradient(to bottom, rgba(0, 181, 226, 0.7), rgba(109, 213, 237, 0.7));
-    /* , url('./BellonLogoSinFondo.png'); */
-    background-size: unset; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen en la pantalla */
-    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
-    min-height: 100vh; /* Asegura que cubra toda la altura de la pantalla */
-    margin: 0; /* Elimina márgenes por defecto */
-    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    background: linear-gradient(to bottom, rgba(0, 181, 226, 0.7), rgba(109, 213, 237, 0.7)), url('./BellonLogoSinFondo.png');
+    background-size: unset;
+    /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;
+    /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat;
+    /* Asegura que la imagen no se repita */
+    min-height: 100vh;
+    /* Asegura que cubra toda la altura de la pantalla */
+    margin: 0;
+    /* Elimina márgenes por defecto */
+    font-family: Arial, sans-serif;
+    /* Fuente predeterminada */
 }
 
 .zoom-card {
@@ -24,11 +29,7 @@ body {
     /* Stronger shadow */
 }
 
-.zoom-card img {
-    transition: transform 0.3s ease;
-}
-
-.zoom-card:hover img {
-    transform: scale(1.2);
-    /* Slight zoom on the icon */
+a {
+    text-decoration: none !important;
+    color: inherit;
 }
