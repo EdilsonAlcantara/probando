@@ -1,23 +1,27 @@
 [
     {
         "name": "Consumo Interno",
-        "icon": "ConsumoInterno",
-        "link": "https://bellon-consumointerno-frontend-dev-gmc7epc9c9f5b0h6.eastus2-01.azurewebsites.net"
+        "icon": "BuildingCheck",
+        "link_desarrollo": "https://bellon-consumointerno-frontend-dev-gmc7epc9c9f5b0h6.eastus2-01.azurewebsites.net",
+        "link_produccion": "https://consumointerno.bellon.com.do"
     },
     {
         "name": "Liquidacion",
-        "icon": "Liquidacion",
-        "link": "https://bellon-liquidacion-frontend-dev-afengya6ahcyhzfr.eastus2-01.azurewebsites.net/"
+        "icon": "BusFront",
+        "link_desarrollo": "https://bellon-liquidacion-frontend-dev-afengya6ahcyhzfr.eastus2-01.azurewebsites.net/",
+        "link_produccion": "https://liquidacion.bellon.com.do/"
     },
     {
         "name": "Fijacion Precio",
-        "icon": "FijacionPrecio",
-        "link": "https://bellon-consumointerno-frontend-dev-gmc7epc9c9f5b0h6.eastus2-01.azurewebsites.net"
+        "icon": "Tags",
+        "link_desarrollo": "https://bellon-fijacionprecio-frontend-dev-dna3b4dtcxhzh4ar.eastus2-01.azurewebsites.net/",
+        "link_produccion": "https://bellon-fijacionprecio-frontend-dev-dna3b4dtcxhzh4ar.eastus2-01.azurewebsites.net/"
     },
     {
-        "name": "Mantenimientos",
-        "icon": "MantenimientoUsuario",
-        "link": "https://bellon-consumointerno-frontend-dev-gmc7epc9c9f5b0h6.eastus2-01.azurewebsites.net"
+        "name": "Consumo Interno",
+        "icon": "Nut",
+        "link_desarrollo": "https://bellon-consumointerno-frontend-dev-gmc7epc9c9f5b0h6.eastus2-01.azurewebsites.net",
+        "link_produccion": "https://consumointerno.bellon.com.do"
     }
     
 ]
