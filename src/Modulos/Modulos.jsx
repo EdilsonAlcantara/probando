@@ -1,9 +1,9 @@
 import React from 'react'
-import { Col, Container, Form, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { ModulosProveedor } from './Controles/modulosContexto'
+import FooterModulos from './Vistas/FooterModulos'
 import ListadoModulos from './Vistas/ListadoModulos'
-import { Check } from 'react-bootstrap-icons'
-import TituloModulo from './Vistas/TituloModulo'
+import TituloModulo from './Vistas/TituloModulos'
 
 export default function Modulos() {
     return (
@@ -11,6 +11,7 @@ export default function Modulos() {
             <Container fluid>
                 <TituloModulo />
                 <ListadoModulos />
+                <FooterModulos />
             </Container>
         </ModulosProveedor>
     )
