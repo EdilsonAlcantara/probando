@@ -22,7 +22,7 @@ export const ModulosProveedor = ({ children }) => {
     }, [datos]);
 
     return (
-        <ModulosContexto.Provider value={{ state, dispatch }}>
+        <ModulosContexto.Provider value={{ state, dispatch, actualizarPropiedades }}>
             {children}
         </ModulosContexto.Provider>
     )
