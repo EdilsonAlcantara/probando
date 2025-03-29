@@ -7,7 +7,7 @@ export default function FooterModulos({ backgroundClass = "bg-light" }) {
         <Navbar className={backgroundClass} fixed={"bottom"}>
             <Container fluid>
                 <Navbar.Brand className="fw-medium">
-                    Copyright © {new Date().getFullYear()}
+                    Copyright © {new Date().getFullYear()} {import.meta.env.VITE_APP_EMPRESA_NOMBRE}
                 </Navbar.Brand>
             </Container>
         </Navbar>
