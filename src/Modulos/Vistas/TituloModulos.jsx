@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Container, Form, Row } from 'react-bootstrap'
 import { useModulos } from '../Controles/useModulos'
 
-export default function TituloModulo() {
+export default function TituloModulos() {
 
     const { state, dispatch, actualizarPropiedades } = useModulos();
 

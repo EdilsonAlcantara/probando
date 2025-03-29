@@ -16,8 +16,8 @@ export default function ListadoModulos() {
         <Row className="justify-content-center">
             {
                 state.listado.map((app, index) => (
-                    <Col sm={12} md={3} lg={3} key={index} className="m-5" style={{ textAlign: '-webkit-center' }}>
-                        <Card style={{ width: '10rem' }} className="zoom-card mt-3" bg={''}>
+                    <Col sm={12} md={3} lg={3} key={index} className="m-2" style={{ textAlign: '-webkit-center' }}>
+                        <Card style={{ width: '10rem', marginBottom: '20px' }} className="zoom-card mt-3" bg={''}>
                             <a href={state.esProduccion ? app.link_produccion : app.link_desarrollo} target="_blank" rel="noopener noreferrer">
                                 {/* <Card.Img variant="top" src={`/${app.icon}.png`} /> */}
                                 <Icon
