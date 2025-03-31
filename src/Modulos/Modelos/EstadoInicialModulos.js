@@ -1,4 +1,10 @@
 export const EstadoInicialModulos = {
     listado: [],
-    esProduccion: false
+    esProduccion: false,
+    esVisualizarLocal: false,
+    mostrarModalModulos: false,
+    moduloSeleccionado: {
+        titulo: "",
+        ruta: ""
+    },
 }

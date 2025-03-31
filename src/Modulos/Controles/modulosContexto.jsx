@@ -13,16 +13,39 @@ export const ModulosProveedor = ({ children }) => {
         dispatch({ type: 'setPropiedad', payload: { id, value } });
     };
 
+    const llenarModuloSeleccionado = (app) => {
+        
+        const moduloSeleccionado = {
+            titulo: app.name,
+            ruta: state.esProduccion ? app.link_produccion : app.link_desarrollo
+        }
+        mostrarModalModulos();
+        dispatch({ type: 'llenarModuloSeleccionado', payload: { moduloSeleccionado } });
+    };
+
     const cargarDatos = () => {
         actualizarPropiedades('listado', datos);
     };
+
+    const mostrarModalModulos = () => {
+        actualizarPropiedades('mostrarModalModulos', true);
+    }
+
+    const cerrarModalModulos = () => {
+        actualizarPropiedades('mostrarModalModulos', false);
+        borrarCache();
+    }
+
+    const borrarCache = () => {
+        localStorage.clear();
+    }
 
     useEffect(() => {
         cargarDatos();
     }, [datos]);
 
     return (
-        <ModulosContexto.Provider value={{ state, dispatch, actualizarPropiedades }}>
+        <ModulosContexto.Provider value={{ state, dispatch, actualizarPropiedades, mostrarModalModulos, cerrarModalModulos, llenarModuloSeleccionado }}>
             {children}
         </ModulosContexto.Provider>
     )

@@ -20,6 +20,7 @@ body {
     cursor: pointer;
     /* Initial box-shadow for the cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 30px !important; */
 }
 
 .zoom-card:hover {
