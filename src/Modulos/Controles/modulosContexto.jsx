@@ -33,6 +33,11 @@ export const ModulosProveedor = ({ children }) => {
 
     const cerrarModalModulos = () => {
         actualizarPropiedades('mostrarModalModulos', false);
+        borrarCache();
+    }
+
+    const borrarCache = () => {
+        localStorage.clear();
     }
 
     useEffect(() => {
