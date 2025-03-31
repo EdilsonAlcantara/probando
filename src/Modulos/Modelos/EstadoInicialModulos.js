@@ -1,4 +1,9 @@
 export const EstadoInicialModulos = {
     listado: [],
-    esProduccion: false
+    esProduccion: false,
+    mostrarModalModulos: false,
+    moduloSeleccionado: {
+        titulo: "",
+        ruta: ""
+    },
 }

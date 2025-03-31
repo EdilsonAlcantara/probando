@@ -5,7 +5,7 @@ import * as Icons from 'react-bootstrap-icons';
 
 export default function ListadoModulos() {
 
-    const { state } = useModulos();
+    const { state, llenarModuloSeleccionado } = useModulos();
 
     const Icon = ({ iconName, ...props }) => {
         const BootstrapIcon = Icons[iconName];
@@ -17,9 +17,10 @@ export default function ListadoModulos() {
             {
                 state.listado.map((app, index) => (
                     <Col sm={12} md={3} lg={3} key={index} className="m-2" style={{ textAlign: '-webkit-center' }}>
-                        <Card style={{ width: '10rem', marginBottom: '80px' }} className="zoom-card mt-3" bg={''}>
-                            <a href={state.esProduccion ? app.link_produccion : app.link_desarrollo} target="_blank" rel="noopener noreferrer">
-                                {/* <Card.Img variant="top" src={`/${app.icon}.png`} /> */}
+                        <Card style={{ width: '10rem', marginBottom: '80px' }} className="zoom-card mt-3" bg={''} onClick={() => llenarModuloSeleccionado(app)}>
+                            {/* <a href={state.esProduccion ? app.link_produccion : app.link_desarrollo} target="_blank" rel="noopener noreferrer"> */}
+                            {/* <Card.Img variant="top" src={`/${app.icon}.png`} /> */}
+                            <div target="_blank" rel="noopener noreferrer">
                                 <Icon
                                     iconName={app.icon}
                                     color="#00b7c3"
@@ -31,7 +32,8 @@ export default function ListadoModulos() {
                                         {app.name}
                                     </Card.Text>
                                 </Card.Body>
-                            </a>
+                            </div>
+                            {/* </a> */}
                         </Card>
                     </Col>
                 ))
