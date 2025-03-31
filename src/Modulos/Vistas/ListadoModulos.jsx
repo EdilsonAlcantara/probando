@@ -17,11 +17,10 @@ export default function ListadoModulos() {
             {
                 state.listado.map((app, index) => (
                     <Col sm={12} md={3} lg={3} key={index} className="m-2" style={{ textAlign: '-webkit-center' }}>
-                        <Card style={{ width: '10rem', marginBottom: '80px' }} >
-                            {/* <Card.Img variant="top" src={`/${app.icon}.png`} /> */}
+                        <Card style={{ width: '10rem', marginBottom: '80px' }}  className="zoom-card mt-3" >
                             {
                                 state.esVisualizarLocal
-                                    ? <div className="zoom-card mt-3" bg={''} onClick={() => llenarModuloSeleccionado(app)}>
+                                    ? <div bg={''} onClick={() => llenarModuloSeleccionado(app)}>
                                         <Icon
                                             iconName={app.icon}
                                             color="#00b7c3"
