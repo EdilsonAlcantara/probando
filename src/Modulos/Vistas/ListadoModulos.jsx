@@ -17,28 +17,42 @@ export default function ListadoModulos() {
             {
                 state.listado.map((app, index) => (
                     <Col sm={12} md={3} lg={3} key={index} className="m-2" style={{ textAlign: '-webkit-center' }}>
-                        <Card style={{ width: '10rem', marginBottom: '80px' }} className="zoom-card mt-3" bg={''} onClick={() => llenarModuloSeleccionado(app)}>
-                            {/* <a href={state.esProduccion ? app.link_produccion : app.link_desarrollo} target="_blank" rel="noopener noreferrer"> */}
+                        <Card style={{ width: '10rem', marginBottom: '80px' }} >
                             {/* <Card.Img variant="top" src={`/${app.icon}.png`} /> */}
-                            <div target="_blank" rel="noopener noreferrer">
-                                <Icon
-                                    iconName={app.icon}
-                                    color="#00b7c3"
-                                    size={100}
-                                    className="align-top my-2"
-                                />
-                                <Card.Body>
-                                    <Card.Text>
-                                        {app.name}
-                                    </Card.Text>
-                                </Card.Body>
-                            </div>
-                            {/* </a> */}
+                            {
+                                state.esVisualizarLocal
+                                    ? <div className="zoom-card mt-3" bg={''} onClick={() => llenarModuloSeleccionado(app)}>
+                                        <Icon
+                                            iconName={app.icon}
+                                            color="#00b7c3"
+                                            size={100}
+                                            className="align-top my-2"
+                                        />
+                                        <Card.Body>
+                                            <Card.Text>
+                                                {app.name}
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </div>
+                                    : <a href={state.esProduccion ? app.link_produccion : app.link_desarrollo} target="_blank" rel="noopener noreferrer">
+                                        <Icon
+                                            iconName={app.icon}
+                                            color="#00b7c3"
+                                            size={100}
+                                            className="align-top my-2"
+                                        />
+                                        <Card.Body>
+                                            <Card.Text>
+                                                {app.name}
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </a>
+                            }
                         </Card>
                     </Col>
                 ))
             }
-        </Row>
+        </Row >
     )
 
 }
